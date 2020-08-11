@@ -1,6 +1,11 @@
 /* Write a function that takes in an array of integers
 and returns a sorted version of that array. Use the Quick Sort algo to sort the array. */
 
+
+// Best: O(nlog(n)) time | O(log(n)) space
+// Average: O(nlog(n)) time | O(log(n)) space
+// Worst: O(n^2) time | O(log(n)) space
+
 function quickSort (array){
     quickSortHelper(array, 0, array.length - 1);
     return array;
